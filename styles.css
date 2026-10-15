@@ -47,8 +47,7 @@ img {
   background-color: blueviolet;
   display: grid;
   grid-template-rows: 1fr 2fr;
-    align-items: center;
-
+  align-items: center;
 }
 .search-bar-container {
   margin-top: 10px;
@@ -111,5 +110,18 @@ button:hover {
 }
 .content {
   background-color: brown;
-  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.projects {
+  background-color: slateblue;
+}
+.project-cards {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.news {
+  background-color: yellowgreen;
 }
