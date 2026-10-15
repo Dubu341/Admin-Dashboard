@@ -119,18 +119,21 @@ button:hover {
   gap: 20px;
   padding: 30px;
 }
-.projects {
-  background-color: slateblue;
-}
+
 .project-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: 200px 200px 200px;
   gap: 20px;
 }
+.projects > p,
+.news > div > p {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
 .card {
+  border-radius: 10px;
   background-color: white;
-  border: 1px solid;
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr;
@@ -142,25 +145,29 @@ button:hover {
   grid-template-columns: repeat(auto-fit, 50px);
   justify-content: end;
 }
-
 .news {
-  background-color: yellowgreen;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px 400px;
+  gap: 10px;
 }
 .announcements {
+  border-radius: 10px;
   background-color: white;
+  padding: 15px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
 }
 .trending {
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px;
   display: grid;
   gap: 10px;
 }
 .trending > div {
-  padding-top: 10px;
-  padding-left: 10px;
-  background-color: aliceblue;
   display: grid;
   grid-template-columns: 50px 1fr;
   gap: 10px;
