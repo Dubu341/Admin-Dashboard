@@ -112,7 +112,7 @@ button:hover {
 .content {
   background-color: brown;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 250px;
   gap: 20px;
   padding: 30px;
 }
@@ -121,7 +121,8 @@ button:hover {
 }
 .project-cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: 200px 200px 200px;
   gap: 20px;
 }
 .card {
@@ -138,4 +139,17 @@ button:hover {
   grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
+}
+.trending {
+  display: grid;
+  gap: 10px;
+}
+.trending > div {
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 10px;
+  align-items: center;
 }
