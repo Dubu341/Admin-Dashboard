@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
 }
-img {
+img,
+.icon {
   height: 30px;
 }
 .user-avatar {
@@ -31,6 +32,7 @@ img {
 .first-row,
 .second-row,
 .third-row {
+  align-items: center;
   display: grid;
   grid-template-columns: 40px 1fr;
   gap: 10px;
@@ -59,7 +61,8 @@ img {
 }
 .search-bar {
   display: grid;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 1fr 50px;
+  gap: 10px;
   align-items: center;
 }
 .search-bar input[type="text"] {
@@ -127,9 +130,19 @@ button:hover {
 }
 .card {
   background-color: white;
-
   border: 1px solid;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  align-items: center;
 }
+.card-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50px);
+  justify-content: end;
+}
+
 .news {
   background-color: yellowgreen;
 }
